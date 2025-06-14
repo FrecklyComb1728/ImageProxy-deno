@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window", "dom"],
+    "strict": true
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --watch index.ts",
+    "start": "deno run --allow-net --allow-read index.ts"
+  },
+  "fmt": {
+    "files": {
+      "include": ["src/", "*.ts"]
+    },
+    "options": {
+      "useTabs": false,
+      "lineWidth": 100,
+      "indentWidth": 2,
+      "singleQuote": false,
+      "proseWrap": "preserve"
+    }
+  },
+  "imports": {
+    "oak": "https://deno.land/x/oak@v12.1.0/mod.ts",
+    "cors": "https://deno.land/x/cors@v1.2.2/mod.ts",
+    "std/": "https://deno.land/std@0.178.0/"
+  }
+} 
