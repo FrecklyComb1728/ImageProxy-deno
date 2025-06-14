@@ -20,7 +20,7 @@ deno run --allow-net --allow-read --allow-write index.ts
 
 ## 配置
 
-配置文件位于 `../config/main_config.json`，共享主配置文件。
+配置文件位于 `index_config.json`，共享主配置文件。
 
 配置示例：
 ```json
